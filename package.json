@@ -1,0 +1,22 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Simple node chat app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pjain-techracers/node-chat-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjain-techracers/node-chat-app/issues"
+  },
+  "homepage": "https://github.com/pjain-techracers/node-chat-app#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
+}
