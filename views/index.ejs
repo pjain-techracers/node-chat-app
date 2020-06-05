@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+  <script defer src="client.js"></script>
+</head>
+
+<body>
+  <div id="room">
+    <% Object.keys(rooms).forEach(room => { %>
+    <div><%= room %></div>
+    <a href="/<%= room %>"> Join</a>
+    <%}) %>
+
+  </div>
+  <form action="/room" method="POST">
+    <input type="text" name="room" required>
+    <button type="submit"> New Room</button>
+  </form>
+
+</body>
+
+</html>

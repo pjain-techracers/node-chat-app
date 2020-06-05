@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+  <script defer src="client.js"></script>
+  <script>
+    const roomName = '<% roomName %>'
+  </script>
+</head>
+
+<body>
+  <div id="chat"></div>
+  <form id="msg-form">
+    <input type="text" id='message'>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
