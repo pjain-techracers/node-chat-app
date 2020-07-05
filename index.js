@@ -37,7 +37,9 @@ app.post('/room', (req, res) => {
   }
 })
 
-server.listen(4000)
+server.listen(8000, () => {
+  console.log("Listening to requests on Port 8000")
+})
 
 io.on('connection', socket => {
   socket.on('send-chat-msg', (room, msg) => {
